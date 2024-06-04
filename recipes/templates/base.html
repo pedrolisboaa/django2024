@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Pedro</title>
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/c59ca1806e.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Freeman&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+    
+</head>
+<body>
+
+
+
+    {% block header %}
+        {% include "header.html" %}
+    {% endblock header %}
+
+    {% block main %}
+      
+    {% endblock main %}
+
+    {% block footer %}
+      
+    {% endblock footer %}
+
+    
+    
+</body>
+</html>
